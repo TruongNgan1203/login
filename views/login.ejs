@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .login{
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+    </div>
+    <form action="/signin" style="margin: 5% 30%;" method="POST">
+        <div class="form-group">
+          <label >User name</label>
+          <input type="text" class="form-control" name="username" placeholder="Enter User name" >
+        </div>
+        <div class="form-group">
+          <label >Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Enter Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <a href="register">Sign up</a>
+    </form>
+</body>
+</html>

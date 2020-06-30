@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .sign-up {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sign-up">
+        <h1>Sign Up</h1>
+    </div>
+    <form action="/sign-up" style="margin: 5% 30%;" method="POST">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Enter Username">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Enter Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Age</label>
+            <input type="text" class="form-control" name="age" placeholder="Enter your age">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" name="address" placeholder="Enter your City">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+</body>
+
+</html>
